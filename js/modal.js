@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	function toggleModal(show) {
 		if (show) {
 			modal.classList.remove("hidden");
+			document.body.style.overflow = "hidden";
 		} else {
 			modal.classList.add("hidden");
+			document.body.style.overflow = "";
 		}
 	}
 
